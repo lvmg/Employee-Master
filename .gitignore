@@ -1,0 +1,6 @@
+# Project exclude paths
+/employee-common/target/
+/employee-entity/target/
+/employee-mapper/target/
+/employee-service/target/
+/employee-web/target/

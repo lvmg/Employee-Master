@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--  表示所有的请求都要解决跨域问题
+  allowed-origins：表示哪些域可以跨域     *
+  allowed-headers：表示跨域时的允许携带的头      *
+  allowed-methods：表示跨域时允许的请求方式      *
+  allow-credentials：表示是否允许携带 cookie     // true  false
+  -->
+    <mvc:cors>
+        <mvc:mapping path="/**"
+                     allowed-origins="*"
+                     allowed-headers="*"
+                     allowed-methods="*"
+                     allow-credentials="false" />
+    </mvc:cors>
+</beans>
